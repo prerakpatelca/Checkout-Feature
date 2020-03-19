@@ -16,6 +16,8 @@ class RoomsController extends Controller
     public function index()
     {
         //
+        $results = DB::select("SELECT * FROM rooms;");
+        return view('rooms.index',['rooms' => $results]);
     }
 
     /**
@@ -26,8 +28,6 @@ class RoomsController extends Controller
     public function create()
     {
         //
-        $results = DB::select("SELECT * FROM rooms;");
-        return view('rooms.index',['rooms' => $results]);
     }
 
     /**
