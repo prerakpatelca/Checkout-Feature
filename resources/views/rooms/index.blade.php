@@ -19,7 +19,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(@rooms as $room)
+        @foreach($rooms as $room)
             <tr>
                 <td>{{ $room->room_number }}</td>
                 <td>{{ $room->room_name }}</td>
