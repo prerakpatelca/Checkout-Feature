@@ -2,25 +2,87 @@
 
 namespace App\Http\Controllers;
 
+use App\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class RoomsController extends Controller
 {
     /**
-     * Handle the incoming request.
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+        $results = DB::select("SELECT * FROM rooms;");
+        return view('rooms.index',['rooms' => $results]);
+    }
+
+    /**
+     * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function __invoke(Request $request)
+    public function store(Request $request)
     {
-        response('Hi, I am in Controller',200);
+        //
     }
 
-    public function ShowRooms()
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Room  $room
+     * @return \Illuminate\Http\Response
+     */
+    public function show(Room $room)
     {
-        $results = DB::select("SELECT * FROM rooms;");
-        return view('rooms.index',['rooms' => $results]);
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Room  $room
+     * @return \Illuminate\Http\Response
+     */
+    public function edit(Room $room)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Room  $room
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, Room $room)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Room  $room
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy(Room $room)
+    {
+        //
     }
 }
