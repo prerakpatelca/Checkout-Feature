@@ -21,6 +21,6 @@ class RoomsController extends Controller
     public function ShowRooms()
     {
         $results = DB::select("SELECT * FROM rooms;");
-        echo json_encode($results);
+        return view('rooms.index',['rooms' => $results]);
     }
 }
