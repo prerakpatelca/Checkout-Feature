@@ -16,7 +16,7 @@ class RoomsController extends Controller
     public function __invoke(Request $request)
     {
         //
-		$results = DB::select("SELECT * FROM hotelrooms;");
+		$results = DB::select("SELECT * FROM rooms;");
 	
 		echo json_encode($results);	
     }
