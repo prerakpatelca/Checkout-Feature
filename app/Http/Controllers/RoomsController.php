@@ -15,7 +15,6 @@ class RoomsController extends Controller
      */
     public function __invoke(Request $request)
     {
-        //
         response('Hi, I am in Controller',200);
     }
 
