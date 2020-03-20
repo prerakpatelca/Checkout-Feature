@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/test', 'RoomsController@ShowRooms');
 
 Route::resource('rooms', 'RoomsController');
+
+Route::resource('bookings', 'BookingController');
