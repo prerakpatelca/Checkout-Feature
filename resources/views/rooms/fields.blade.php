@@ -1,11 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
-
-<div class="col">
-<form action="{{ route('rooms.update', ['rooms'=>$rooms]) }}" method="POST">
-    @method('PUT')
-    <div class="form-group row">
+<div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
         <div class="col-sm-10">
             <input name="room_number" type="text" class="form-control" placeholder="Room Number"/>
@@ -45,16 +38,3 @@
     </div>
 
     @csrf
-
-    <div class="form-group row">
-        <div class="col-sm-3">
-            <button type="submit" class="btn btn-primary">Add Reservation</button>
-        </div>
-        <div class="col-sm-9">
-            <a href="{{ route('rooms.index') }}" class="btn btn-secondary">Cancel</a>
-        </div>
-    </div>
-</form>
-</div>
-
-@endsection
