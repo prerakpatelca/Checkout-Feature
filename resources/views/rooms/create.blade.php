@@ -29,7 +29,7 @@
     </div>
 
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label" for="max_occ">Max Occuoancy</label>
+        <label class="col-sm-2 col-form-label" for="max_occ">Max Occupancy</label>
         <div class="col-sm-10">
             <select name="max_occ" class="form-control" id="max_occ" required>
                 <option value="1">1</option>
