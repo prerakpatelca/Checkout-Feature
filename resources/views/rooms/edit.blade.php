@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="col">
-<form action="{{ route('rooms.update', ['room'=>$room]) }}" method="POST">
+<form action="{{ route('rooms.update') }}" method="POST">
     @method('PUT')
     @include('rooms.fields')
 
