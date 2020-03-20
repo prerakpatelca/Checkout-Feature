@@ -32,12 +32,12 @@
                 <td>{{ $room->room_desc }}</td>
                 <td>{{ $room->max_occupancy }}</td>
                 <td class="actions">
-                    <a
-                        href="{{ action('RoomsController@destroy', ['room' => $room->id]) }}"
-                        alt="View"
-                        title="View">
-                      Delete
-                    </a>
+                    <form action="{{ action('RoomsController@destroy', ['room' => $room->id]) }}" method="POST">
+                        @method('DELETE')
+                        @crsf
+                        <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete</button>
+                    </form>
+
                     <a
                         href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
                         alt="Edit"
