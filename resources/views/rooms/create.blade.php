@@ -21,9 +21,9 @@
     </div>
 
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label" for="desc">Room Description</label>
+        <label class="col-sm-2 col-form-label" for="room_desc">Room Description</label>
         <div class="col-sm-10">
-            <input name="desc" type="text" class="form-control" placeholder="Room Description"/>
+            <input name="room_desc" type="text" class="form-control" placeholder="Room Description"/>
             <small class="form-text text-muted">Room description for the room being booked.</small>
         </div>
     </div>
