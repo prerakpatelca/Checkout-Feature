@@ -10,6 +10,6 @@ class Room extends Model
         'room_number',
         'room_name',
         'room_desc',
-        'max_occ',
+        'max_occupancy',
     ];
 }
