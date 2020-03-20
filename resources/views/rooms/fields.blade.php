@@ -23,9 +23,9 @@
     </div>
 
     <div class="form-group row">
-        <label class="col-sm-2 col-form-label" for="max_occ">Max Occupancy</label>
+        <label class="col-sm-2 col-form-label" for="max_occupancy">Max Occupancy</label>
         <div class="col-sm-10">
-            <select name="max_occ" class="form-control" id="max_occ" required>
+            <select name="max_occupancy" class="form-control" id="max_occupancy" required>
                 <option value="1" {{ (isset($rooms->max_occupancy) && 1 === $rooms->max_occupancy) ? 'selected' : '' }}>1</option>
                 <option value="2" {{ (isset($rooms->max_occupancy) && 2 === $rooms->max_occupancy) ? 'selected' : '' }}>2</option>
                 <option value="3" {{ (isset($rooms->max_occupancy) && 3 === $rooms->max_occupancy) ? 'selected' : '' }}>3</option>
