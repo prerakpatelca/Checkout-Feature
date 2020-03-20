@@ -34,7 +34,7 @@
                 <td class="actions">
                     <form action="{{ action('RoomsController@destroy', ['room' => $room->id]) }}" method="POST">
                         @method('DELETE')
-                        @crsf
+                        @csrf
                         <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete</button>
                     </form>
 
