@@ -89,7 +89,7 @@ class RoomsController extends Controller
         // ]);
         $room->fill($request->input());
         $room->save;
-        return redirect()->action('RoomsController@index');
+        //return redirect()->action('RoomsController@index');
     }
 
     /**
