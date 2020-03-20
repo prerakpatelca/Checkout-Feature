@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="col">
-<form action="{{ route('rooms.update', ['rooms'=>$room]) }}" method="POST">
+<form action="{{ route('rooms.update', ['room'=>$rooms]) }}" method="POST">
     @method('PUT')
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
