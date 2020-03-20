@@ -42,8 +42,7 @@
                     <a
                         href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
                         alt="Edit"
-                        title="Edit">
-                      Edit
+                        title="Edit">Edit
                     </a>
                 </td>
             </tr>
