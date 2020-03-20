@@ -19,7 +19,7 @@
             <th>
                 Max Occupancy
             </th>
-            <th>
+            <th colspan=2>
                 Actions
             </th>
         </tr>
@@ -37,7 +37,8 @@
                         @csrf
                         <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete</button>
                     </form>
-
+                </td>
+                <td>
                     <a
                         href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
                         alt="Edit"
