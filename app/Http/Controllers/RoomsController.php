@@ -38,12 +38,13 @@ class RoomsController extends Controller
      */
     public function store(Request $request)
     {
-        DB::table('rooms')->insert([
-            'room_number' => $request->input('room_number'),
-            'room_name' => $request->input('room_name'),
-            'room_desc' => $request->input('room_desc'),
-            'max_occupancy' => $request->input('max_occ')
-        ]);
+        // DB::table('rooms')->insert([
+        //     'room_number' => $request->input('room_number'),
+        //     'room_name' => $request->input('room_name'),
+        //     'room_desc' => $request->input('room_desc'),
+        //     'max_occupancy' => $request->input('max_occ')
+        // ]);
+        Room::create($request->input());
         return redirect()->action('RoomsController@index');
     }
 
