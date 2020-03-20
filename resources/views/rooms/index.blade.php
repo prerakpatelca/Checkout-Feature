@@ -30,13 +30,13 @@
                 <td>{{ $room->max_occupancy }}</td>
                 <td class="actions">
                     <a
-                        href="{{ action('RoomsController@show', ['rooms' => $rooms->id]) }}"
+                        href="{{ action('RoomsController@show', ['rooms' => $room->id]) }}"
                         alt="View"
                         title="View">
                       View
                     </a>
                     <a
-                        href="{{ action('RoomsController@edit', ['rooms' => $rooms->id]) }}"
+                        href="{{ action('RoomsController@edit', ['rooms' => $room->id]) }}"
                         alt="Edit"
                         title="Edit">
                       Edit
