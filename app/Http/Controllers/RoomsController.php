@@ -100,7 +100,8 @@ class RoomsController extends Controller
      */
     public function destroy(Room $room)
     {
-        DB::table('rooms')->where('id',$room->id)->delete();
+        // DB::table('rooms')->where('id',$room->id)->delete();
+        $room->delete();
         return redirect()->action('RoomsController@index');
     }
 }
