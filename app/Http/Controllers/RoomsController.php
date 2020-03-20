@@ -26,7 +26,7 @@ class RoomsController extends Controller
      */
     public function create()
     {
-        $rooms = Room::get();
+        $rooms = DB::select("SELECT * FROM rooms;");
         return view('rooms.create',['rooms' => $rooms]);
     }
 
