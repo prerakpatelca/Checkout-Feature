@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+
+<a class="btn btn-primary" href="{{ route('room.create') }}">Add New Room</a>
+
 <table class="table">
     <thead>
         <tr>
