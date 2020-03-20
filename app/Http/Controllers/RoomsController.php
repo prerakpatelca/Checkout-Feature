@@ -66,7 +66,8 @@ class RoomsController extends Controller
      */
     public function edit(Room $room)
     {
-        //
+        $rooms = DB::select("SELECT * FROM rooms;");
+        return view('rooms.edit',['rooms' => $rooms]);
     }
 
     /**
