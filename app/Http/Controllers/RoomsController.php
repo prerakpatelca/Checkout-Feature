@@ -79,7 +79,15 @@ class RoomsController extends Controller
      */
     public function update(Request $request, Room $room)
     {
-        //
+        DB::table('rooms')
+            ->where('id',$room->id)            
+            ->insert([
+            'room_number' => $request->input('room_number'),
+            'room_name' => $request->input('room_name'),
+            'room_desc' => $request->input('room_desc'),
+            'max_occupancy' => $request->input('max_occ')
+        ]);
+        return redirect()->action('RoomsController@index');
     }
 
     /**
