@@ -66,7 +66,7 @@ class RoomsController extends Controller
      */
     public function edit(Room $room)
     {
-        $rooms = DB::table('rooms')->first();
+        $rooms = DB::table('rooms')->where('id',$room->id)->first();
         return view('rooms.edit',['rooms' => $rooms]);
     }
 
