@@ -19,6 +19,9 @@
             <th>
                 Max Occupancy
             </th>
+            <th>
+                Actions
+            </th>
         </tr>
     </thead>
     <tbody>
