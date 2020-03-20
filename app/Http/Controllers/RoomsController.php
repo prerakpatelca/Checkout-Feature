@@ -55,7 +55,6 @@ class RoomsController extends Controller
      */
     public function show(Room $room)
     {
-        dd($room);
     }
 
     /**
