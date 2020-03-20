@@ -28,6 +28,20 @@
                 <td>{{ $room->room_name }}</td>
                 <td>{{ $room->room_desc }}</td>
                 <td>{{ $room->max_occupancy }}</td>
+                <td class="actions">
+                    <a
+                        href="{{ action('RoomsController@show', ['rooms' => $rooms->id]) }}"
+                        alt="View"
+                        title="View">
+                      View
+                    </a>
+                    <a
+                        href="{{ action('RoomsController@edit', ['rooms' => $rooms->id]) }}"
+                        alt="Edit"
+                        title="Edit">
+                      Edit
+                    </a>
+                </td>
             </tr>
         @endforeach
     </tbody>
