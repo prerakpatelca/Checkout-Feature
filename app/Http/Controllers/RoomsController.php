@@ -88,7 +88,7 @@ class RoomsController extends Controller
         //     'max_occupancy' => $request->input('max_occ')
         // ]);
         $room->fill($request->input());
-        $room->save;
+        $room->save();
         //return redirect()->action('RoomsController@index');
     }
 
