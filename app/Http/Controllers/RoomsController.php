@@ -98,6 +98,7 @@ class RoomsController extends Controller
      */
     public function destroy(Room $room)
     {
-        //
+        DB::table('rooms')->where('id',$room->id)->delete();
+        return redirect()->action('RoomsController@index');
     }
 }
