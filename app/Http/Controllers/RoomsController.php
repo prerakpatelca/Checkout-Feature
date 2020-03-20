@@ -15,7 +15,7 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        $rooms = DB::select("SELECT * FROM rooms;");
+        $rooms = DB::table('rooms')->orderBy('id', 'asc')->get();
         return view('rooms.index',['rooms' => $rooms]);
     }
 
