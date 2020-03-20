@@ -32,7 +32,7 @@
                 <td>{{ $booking->guest_name }}</td>
                 <td>{{ $booking->date }}</td>
                 <td class="actions">
-                    <form action="{{ action('RoomsController@destroy', ['booking' => $booking->id]) }}" method="POST">
+                    <form action="{{ action('BookingController@destroy', ['booking' => $booking->id]) }}" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete</button>
@@ -40,7 +40,7 @@
                 </td>
                 <td>
                     <a
-                        href="{{ action('RoomsController@edit', ['booking' => $booking->id]) }}"
+                        href="{{ action('BookingController@edit', ['booking' => $booking->id]) }}"
                         alt="Edit"
                         title="Edit">Edit
                     </a>
