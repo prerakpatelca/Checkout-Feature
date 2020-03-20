@@ -81,7 +81,7 @@ class RoomsController extends Controller
     {
         DB::table('rooms')
             ->where('id',$room->id)            
-            ->insert([
+            ->update([
             'room_number' => $request->input('room_number'),
             'room_name' => $request->input('room_name'),
             'room_desc' => $request->input('room_desc'),
