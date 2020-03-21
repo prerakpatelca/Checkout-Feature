@@ -17,7 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test', 'RoomsController@ShowRooms');
+Route::get('/route', function () {
+    return view('route');
+});
 
 Route::resource('rooms', 'RoomsController');
 
