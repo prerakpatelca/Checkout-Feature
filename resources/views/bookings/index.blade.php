@@ -2,7 +2,52 @@
 
 @section('content')
 
-<a class="btn btn-primary" href="{{ route('rooms.create') }}">Add New Room</a>
+<div class="col">
+<form action="{{ route('rooms.store') }}" method="POST">
+<div class="form-group row">
+        <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
+        <div class="col-sm-10">
+            <input name="room_number" type="text" class="form-control" placeholder="Room Number" value="{{ $bookings->room_number ?? '' }}"/>
+            <small class="form-text text-muted">The room name being booked.</small>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"for="room_name">Room Name</label>
+        <div class="col-sm-10">
+            <input name="room_name" type="text" class="form-control" placeholder="Room Name" value="{{ $bookings->room_name ?? '' }}" />
+            <small class="form-text text-muted">The room name being booked.</small>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="guest_name">Guest Name</label>
+        <div class="col-sm-10">
+            <input name="guest_name" type="text" class="form-control" placeholder="Guest Name" value="{{ $bookings->guest_name ?? '' }}" />
+            <small class="form-text text-muted">Guest name for the room being booked.</small>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="date">Date</label>
+        <div class="col-sm-10">
+            <input name="date" type="date" class="form-control" placeholder="Date" value="{{ $bookings->date ?? '' }}" />
+            <small class="form-text text-muted">Booking date for the room being booked.</small>
+        </div>
+    </div>
+
+    @csrf
+
+    <div class="form-group row">
+        <div class="col-sm-3">
+            <button type="submit" class="btn btn-primary">Add a Booking</button>
+        </div>
+        <div class="col-sm-9">
+            <a href="{{ route('bookings.index') }}" class="btn btn-secondary">Cancel</a>
+        </div>
+    </div>
+</form>
+</div>
 
 <table class="table">
     <thead>
@@ -19,7 +64,7 @@
             <th>
                 Date
             </th>
-            <th colspan=2>
+            <th>
                 Actions
             </th>
         </tr>
@@ -37,13 +82,6 @@
                         @csrf
                         <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete</button>
                     </form>
-                </td>
-                <td>
-                    <a
-                        href="{{ action('BookingController@edit', ['booking' => $booking->id]) }}"
-                        alt="Edit"
-                        title="Edit">Edit
-                    </a>
                 </td>
             </tr>
         @endforeach
