@@ -4,7 +4,13 @@
 
 <div class="col">
 <form action="{{ route('bookings.store') }}" method="POST">
-    
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
+        <div class="col-sm-10">
+            <input name="room_number" type="text" class="form-control" placeholder="Room Number" />
+            <small class="form-text text-muted">The room name being booked.</small>
+        </div>
+    </div>
 
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_name">Room Name</label>
