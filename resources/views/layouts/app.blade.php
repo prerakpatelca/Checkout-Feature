@@ -138,7 +138,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" active href="{{ route('rooms.index') }}">Rooms</a>
+          <a class="nav-link" href="{{ route('rooms.index') }}">Rooms</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ route('bookings.index') }}">Bookings</a>
