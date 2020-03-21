@@ -198,9 +198,10 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script> 
       $(".nav-item .nav-link").on("click", function(){
-      $(".nav-item").find(".active").removeClass("active");
+      $("li").find(".active").removeClass("active");
       $(this).addClass("active");
       });
+});
 </script>
   </body>
 </html>
