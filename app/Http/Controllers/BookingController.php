@@ -25,7 +25,8 @@ class BookingController extends Controller
      */
     public function create()
     {
-        //
+        // $bookings = Room::get();
+        // return view('rooms.create',['rooms' => (new Booking())]);
     }
 
     /**
@@ -36,7 +37,8 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Booking::create($request->input());
+        return redirect()->action('BookingController@index');
     }
 
     /**
