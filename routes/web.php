@@ -21,7 +21,7 @@ Route::get('/test', function () {
     return "hello";
 });
 
-Route::get('/about', function () {
+Route::get('about', function () {
     return "hello";
 });
 
