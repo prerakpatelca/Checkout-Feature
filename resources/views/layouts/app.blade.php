@@ -123,12 +123,7 @@
       }
 
     </style>
-    <script> 
-      $(".nav-item .nav-link").on("click", function(){
-      $("li").find(".active").removeClass("active");
-      $(this).addClass("active");
-      });
-</script>
+
   </head>
   <body>
     <header>
@@ -202,5 +197,11 @@
     <script>window.jQuery || document.write('<script src="https://getbootstrap.com/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script> 
+      $(".nav-item .nav-link").on("click", function(){
+      $("li").find(".active").removeClass("active");
+      $(this).addClass("active");
+      });
+</script>
   </body>
 </html>
