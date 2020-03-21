@@ -6,7 +6,7 @@
 <form action="{{ route('bookings.store') }}" method="POST">
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             <input name="room_number" type="text" class="form-control" placeholder="Room Number" required />
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
@@ -14,7 +14,7 @@
 
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_name">Room Name</label>
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             <input name="room_name" type="text" class="form-control" placeholder="Room Name" required />
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
@@ -22,7 +22,7 @@
 
     <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="guest_name">Guest Name</label>
-        <div class="col-sm-10">
+        <div class="col-sm-5">
             <input name="guest_name" type="text" class="form-control" placeholder="Guest Name" required />
             <small class="form-text text-muted">Guest name for the room being booked.</small>
         </div>
