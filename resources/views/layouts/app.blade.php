@@ -128,7 +128,6 @@
       $("li").find(".active").removeClass("active");
       $(this).addClass("active");
       });
-});
 </script>
   </head>
   <body>
