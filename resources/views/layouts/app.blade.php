@@ -33,7 +33,7 @@
           <a class="nav-link" href="{{ route('bookings.index') }}" >Bookings</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="">About</a>
+          <a class="nav-link" href="{{ route('about') }}">About</a>
         </li>
         <!-- Authentication Links -->
         @if (Route::has('login'))
