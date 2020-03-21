@@ -21,7 +21,7 @@ Route::get('/test', function () {
     return "hello";
 });
 
-Route::get('about', 'AboutController@index');
+Route::resource('about', 'AboutController@index');
 
 Route::resource('rooms', 'RoomsController');
 
