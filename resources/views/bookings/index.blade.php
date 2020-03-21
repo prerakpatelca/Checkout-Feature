@@ -15,7 +15,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_name">Room Name</label>
         <div class="col-sm-10">
-            <input name="room_name" type="text" class="form-control" placeholder="Room Name" value="{{ $bookings->room_name ?? '' }}" />
+            <input name="room_name" type="text" class="form-control" placeholder="Room Name" />
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
     </div>
@@ -23,7 +23,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="guest_name">Guest Name</label>
         <div class="col-sm-10">
-            <input name="guest_name" type="text" class="form-control" placeholder="Guest Name" value="{{ $bookings->guest_name ?? '' }}" />
+            <input name="guest_name" type="text" class="form-control" placeholder="Guest Name" />
             <small class="form-text text-muted">Guest name for the room being booked.</small>
         </div>
     </div>
@@ -31,7 +31,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="date">Date</label>
         <div class="col-sm-10">
-            <input name="date" type="date" class="form-control" placeholder="Date" value="{{ $bookings->date ?? '' }}" />
+            <input name="date" type="date" class="form-control" placeholder="Date" />
             <small class="form-text text-muted">Booking date for the room being booked.</small>
         </div>
     </div>
