@@ -30,7 +30,7 @@
 
     <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="date">Date</label>
-        <div class="col-sm-4">
+        <div class="col-sm-2">
             <input name="date" type="date" class="form-control" placeholder="Date" required />
             <small class="form-text text-muted">Booking date for the room being booked.</small>
         </div>
