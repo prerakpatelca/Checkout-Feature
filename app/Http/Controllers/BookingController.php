@@ -85,7 +85,6 @@ class BookingController extends Controller
      */
     public function destroy(Booking $booking)
     {
-        DB::table('rooms')->where('room_number',$booking->room_number)->delete();
         $booking->delete();
         return redirect()->action('BookingController@index');
     }
