@@ -7,7 +7,11 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
         <div class="col-sm-5">
-            <input name="room_number" type="text" class="form-control" placeholder="Room Number" required />
+            <select name="room_number" class="form-control" id="room_number" required>
+                @foreach($rooms as $room)
+                    <option value="{{ $room->room_number }}">{{ $room->room_number }}</option>
+                @endforeach
+            </select>
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
     </div>
