@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="col">
-<form action="{{ route('rooms.store') }}" method="POST">
+<form action="{{ route('bookings.store') }}" method="POST">
 <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
         <div class="col-sm-10">
