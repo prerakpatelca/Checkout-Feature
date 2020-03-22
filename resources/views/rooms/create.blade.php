@@ -7,7 +7,7 @@
     @include('rooms.fields')
 
     <div class="form-group row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 spacing">
             <button type="submit" class="btn btn-primary">Add Room</button>
         </div>
         <div class="col-sm-9">
