@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<br>
 
 <a class="btn btn-primary" href="{{ route('rooms.create') }}">Add New Room</a>
 
