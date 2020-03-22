@@ -1,7 +1,7 @@
 <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
         <div class="col-sm-10">
-            <input name="room_number" type="integer" class="form-control" placeholder="Room Number" value="{{ $rooms->room_number ?? '' }}"/>
+            <input name="room_number" type="number" class="form-control" placeholder="Room Number" value="{{ $rooms->room_number ?? '' }}"/>
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
     </div>
