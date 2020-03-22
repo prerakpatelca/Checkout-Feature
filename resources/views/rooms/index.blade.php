@@ -38,7 +38,7 @@
                         <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE"><i class="fa fa-minus-square fa-2x" aria-hidden="true"></i></button>
                     </form>
                 </td>
-                <td>
+                <td class="actions">
                     <a
                         href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
                         alt="Edit"
