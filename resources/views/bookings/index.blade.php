@@ -21,7 +21,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_name">Room Name</label>
         <div class="col-sm-5">
-            <input name="room_name" type="text" class="form-control" placeholder="Room Name" required />
+            <input name="room_name" type="text" class="form-control" placeholder="Room Name" required value="{{ $room->room_name }}"/>
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
     </div>
