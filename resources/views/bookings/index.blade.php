@@ -43,7 +43,7 @@
     @csrf
 
     <div class="form-group row">
-        <div class="col-sm-3">
+        <div class="col-sm-3 spacing">
             <button type="submit" class="btn btn-primary">Add a Booking</button>
         </div>
         <div class="col-sm-4">

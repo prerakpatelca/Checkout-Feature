@@ -22,8 +22,8 @@
         color: #5a5a5a;
       }
 
-      button{
-        padding-bottom: 3rem;
+      spacing{
+        padding-bottom: 2rem;
       }
 
     </style>
