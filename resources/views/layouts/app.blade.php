@@ -35,7 +35,7 @@
       }
 
       .delete{
-        color:white;
+        color:#5a5a5a;
       }
 
     </style>
