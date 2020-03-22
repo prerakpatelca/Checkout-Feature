@@ -35,11 +35,6 @@
         color:red;
       }
 
-      .edit{
-        color:blue;
-        margin: 3rem;
-      }
-
     </style>
   </head>
   <body>
