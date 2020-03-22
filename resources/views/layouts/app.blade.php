@@ -26,6 +26,11 @@
         padding-bottom: 2rem;
       }
 
+      .enter
+      {
+        margin-bottom: 2rem;
+      }
+
     </style>
   </head>
   <body>
