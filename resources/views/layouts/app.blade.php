@@ -22,7 +22,7 @@
         color: #5a5a5a;
       }
 
-      spacing{
+      .spacing{
         padding-bottom: 2rem;
       }
 
