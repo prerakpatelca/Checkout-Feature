@@ -37,7 +37,7 @@
 
       .edit{
         color:blue;
-        margin: 30px 6px 12px 6px;
+        margin: 3rem 3rem 3rem 3rem;
       }
 
     </style>
