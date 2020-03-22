@@ -32,7 +32,7 @@
       }
 
       .delete{
-        color:##ab0000;
+        color:red;
       }
 
       .edit{
