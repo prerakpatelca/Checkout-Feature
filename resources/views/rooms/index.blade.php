@@ -39,14 +39,11 @@
                     </form>
                 </td>
                 <td>
-                    <form action="{{ action('RoomsController@edit', ['room' => $room->id]) }}">
-                        <button
-                            type="submit"
-                            class="btn btn-link edit"
-                            value="Edit"
-                            title="Edit"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
-                        </button>
-                    </form>
+                    <a
+                        href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
+                        alt="Edit"
+                        title="Edit"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
+                    </a>
                 </td>
             </tr>
         @endforeach
