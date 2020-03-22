@@ -42,7 +42,7 @@
                     <a
                         href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
                         alt="Edit"
-                        title="Edit">Edit<i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
+                        title="Edit">Edit<i class="fa fa-pencil-square fa-lg" aria-hidden="true"></i>
                     </a>
                 </td>
             </tr>
