@@ -21,7 +21,11 @@
         padding-bottom: 3rem;
         color: #5a5a5a;
       }
-      
+
+      button{
+        padding-bottom: 3rem;
+      }
+
     </style>
   </head>
   <body>
