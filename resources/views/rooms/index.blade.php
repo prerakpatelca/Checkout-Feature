@@ -39,7 +39,7 @@
                     </form>
                 </td>
                 <td>
-                    <form action="{{ action('RoomsController@edit', ['room' => $room->id]) }}" method="POST">
+                    <form action="{{ action('RoomsController@edit', ['room' => $room->id]) }}">
                         <button
                             type="submit"
                             class="btn btn-link edit"
