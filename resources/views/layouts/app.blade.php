@@ -31,6 +31,14 @@
         margin-bottom: 2rem;
       }
 
+      .delete{
+        color:red;
+      }
+
+      .edit{
+        margin-top:10px;
+      }
+
     </style>
   </head>
   <body>
