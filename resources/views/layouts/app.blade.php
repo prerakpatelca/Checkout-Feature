@@ -90,12 +90,6 @@
 </header>
 
 <main role="main">
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Buttons -->
-            @yield('buttons')
-        </div>
-    </div>
     <div class="container mt-1">
         <div class="row">
             <!-- Content -->
