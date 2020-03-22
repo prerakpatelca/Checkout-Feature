@@ -37,6 +37,7 @@
 
       .edit{
         color:blue;
+        padding: 6px 12px;
       }
 
     </style>
