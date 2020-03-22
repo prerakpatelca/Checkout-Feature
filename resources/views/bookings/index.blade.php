@@ -11,7 +11,7 @@
         <div class="col-sm-2">
             <select name="room_number" class="form-control" id="room_number" required>
                 @foreach($rooms as $room)
-                    <option value="{{ $room->room_number }}">{{ $room->room_number }}</option>
+                    <option value="{{ $room->room_number }}">{{ $room->room_number }} - {{ $room->room_name }}</option>
                 @endforeach
             </select>
             <small class="form-text text-muted">The room name being booked.</small>
