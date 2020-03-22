@@ -2,7 +2,7 @@
 
 @section('content')
 
-<a class="btn btn-primary" href="{{ route('rooms.create') }}"><i class="fa fa-plus" aria-hidden="true"></i></a>
+<a class="btn btn-primary" href="{{ route('rooms.create') }}"><i class="fa fa-plus" aria-hidden="true"> Add a new room</i></a>
 
 <table class="table">
     <thead>
