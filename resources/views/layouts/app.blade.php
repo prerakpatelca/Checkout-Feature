@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body {
+        
         padding-top: 3rem;
         padding-bottom: 3rem;
         color: #5a5a5a;
