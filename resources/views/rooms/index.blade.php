@@ -35,14 +35,14 @@
                     <form action="{{ action('RoomsController@destroy', ['room' => $room->id]) }}" method="POST">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete</button>
+                        <button type="submit" class="btn btn-link" title="Delete" value="DELETE">Delete<i class="fa fa-minus-square" aria-hidden="true"></i></button>
                     </form>
                 </td>
                 <td>
                     <a
                         href="{{ action('RoomsController@edit', ['room' => $room->id]) }}"
                         alt="Edit"
-                        title="Edit">Edit
+                        title="Edit">Edit<i class="fa fa-pencil-square" aria-hidden="true"></i>
                     </a>
                 </td>
             </tr>
