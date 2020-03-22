@@ -36,7 +36,7 @@
       }
 
       .edit{
-        margin-top:20px;
+        color:blue;
       }
 
     </style>
