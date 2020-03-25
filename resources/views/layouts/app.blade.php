@@ -51,11 +51,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item <?php echo 'active' ?>">
           <a class="nav-link" href="{{ route('rooms.index') }}">Rooms</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link <?php echo 'active'; ?>" href="{{ route('bookings.index') }}" >Bookings</a>
+          <a class="nav-link" href="{{ route('bookings.index') }}" >Bookings</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="{{ route('about.index') }}">About</a>
