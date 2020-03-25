@@ -70,7 +70,7 @@ class RoomsController extends Controller
     public function edit(Room $room)
     {
         $rooms = DB::table('rooms')->where('id',$room->id)->first();
-        return view('rooms.edit',['rooms' => $rooms]);
+        return view('rooms.edit',['rooms' => $rooms,'isActive' => 'active']);
     }
 
     /**
