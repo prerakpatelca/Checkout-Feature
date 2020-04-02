@@ -15,10 +15,11 @@ class RoomsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    $current = 'rooms';
     public function index()
     {
         //  DB::table('users')->get();
-        $current = 'rooms';
+        
         $rooms = Room::orderBy('id', 'asc')->get();
         return view('rooms.index',['rooms' => $rooms,'current'=>$current]);
     }
@@ -31,7 +32,7 @@ class RoomsController extends Controller
     public function create()
     {
         $rooms = Room::get();
-        return view('rooms.create',['rooms' => (new Room())]);
+        return view('rooms.create',['rooms' => (new Room()),'current'=>$current]);
     }
 
     /**
@@ -71,7 +72,7 @@ class RoomsController extends Controller
     public function edit(Room $room)
     {
         $rooms = DB::table('rooms')->where('id',$room->id)->first();
-        return view('rooms.edit',['rooms' => $rooms,'isActive' => 'active']);
+        return view('rooms.edit',['rooms' => $rooms,'current'=>$current]);
     }
 
     /**
