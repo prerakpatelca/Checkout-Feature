@@ -29,10 +29,6 @@
     <tbody>
         @foreach($rooms as $room)
             <tr>
-                <td>{{ $room->room_number }}</td>
-                <td>{{ $room->room_name }}</td>
-                <td>{{ $room->room_desc }}</td>
-                <td>{{ $room->max_occupancy }}</td>
                 <td class="actions">
                     <form action="{{ action('RoomsController@destroy', ['room' => $room->id]) }}" method="POST">
                         @method('DELETE')
@@ -40,6 +36,11 @@
                         <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE"><i class="fa fa-minus-square fa-2x" aria-hidden="true"></i></button>
                     </form>
                 </td>
+                <td>{{ $room->room_number }}</td>
+                <td>{{ $room->room_name }}</td>
+                <td>{{ $room->room_desc }}</td>
+                <td>{{ $room->max_occupancy }}</td>
+                
                 <td class="actions">
                     <a
                         class="edit"
