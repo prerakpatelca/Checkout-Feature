@@ -10,6 +10,7 @@ class AboutController extends Controller
 {
     public function index()
     {
-        return view('about.index',['isActive' => 'active']);
+        $current = 'about';
+        return view('about.index',['current' => $current]);
     }
 }

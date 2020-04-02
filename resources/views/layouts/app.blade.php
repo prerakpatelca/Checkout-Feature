@@ -57,7 +57,7 @@
         <li class="nav-item {{ $current == 'bookings' ? 'active' : '' }}">
           <a class="nav-link" href="{{ route('bookings.index') }}" >Bookings</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ $current == 'about' ? 'active' : '' }}">
           <a class="nav-link" href="{{ route('about.index') }}">About</a>
         </li>
         <!-- Authentication Links -->
