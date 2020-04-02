@@ -36,7 +36,7 @@
                     <form action="{{ action('RoomsController@destroy', ['room' => $room->id]) }}" method="POST">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE"><i class="fa fa-minus-square fa-2x" aria-hidden="true"></i></button>
+                        <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE">Delete</button>
                     </form>
                 </td>
                 <td>{{ $room->room_number }}</td>
