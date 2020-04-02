@@ -20,7 +20,7 @@ class BookingController extends Controller
         $current = 'bookings';
         $rooms = Room::get();
         $bookings = Booking::orderBy('id', 'asc')->get();
-        return view('bookings.index',['bookings' => $bookings,'rooms' => $rooms,'$current' => $current]);
+        return view('bookings.index',['bookings' => $bookings,'rooms' => $rooms,'current' => $current]);
     }
 
     /**
