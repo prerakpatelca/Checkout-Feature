@@ -3,7 +3,7 @@
 <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_number">Room Number</label>
         <div class="col-sm-10">
-            <input name="room_number" type="number" class="form-control" placeholder="Room Number" value="{{ $rooms->room_number ?? '' }}"/>
+            <input name="room_number" type="number" class="form-control" placeholder="Room Number" value="{{ $rooms->room_number ?? '' }}" required/>
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
     </div>
@@ -11,7 +11,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label"for="room_name">Room Name</label>
         <div class="col-sm-10">
-            <input name="room_name" type="text" class="form-control" placeholder="Room Name" value="{{ $rooms->room_name ?? '' }}" />
+            <input name="room_name" type="text" class="form-control" placeholder="Room Name" value="{{ $rooms->room_name ?? '' }}" required/>
             <small class="form-text text-muted">The room name being booked.</small>
         </div>
     </div>
@@ -19,7 +19,7 @@
     <div class="form-group row">
         <label class="col-sm-2 col-form-label" for="room_desc">Room Description</label>
         <div class="col-sm-10">
-            <input name="room_desc" type="text" class="form-control" placeholder="Room Description" value="{{ $rooms->room_desc ?? '' }}" />
+            <input name="room_desc" type="text" class="form-control" placeholder="Room Description" value="{{ $rooms->room_desc ?? '' }}" required/>
             <small class="form-text text-muted">Room description for the room being booked.</small>
         </div>
     </div>
