@@ -10,6 +10,9 @@
     <thead>
         <tr>
             <th>
+                Delete
+            </th>
+            <th>
                 Room Number
             </th>
             <th>
@@ -22,7 +25,7 @@
                 Max Occupancy
             </th>
             <th colspan=2>
-                Actions
+                Edit
             </th>
         </tr>
     </thead>
