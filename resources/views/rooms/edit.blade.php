@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="col">
-<form action="{{ route('rooms.update',['room' => $rooms->id]) }}" method="POST">
+<form action="{{ route('rooms.update',['room' => $rooms->room_number]) }}" method="POST">
     @method('PUT')
     @include('rooms.fields')
 
