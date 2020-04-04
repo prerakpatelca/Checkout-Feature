@@ -17,8 +17,6 @@ class RoomsController extends Controller
      */
     public function index()
     {
-        //  DB::table('users')->get();
-        
         $rooms = Room::orderBy('id', 'asc')->get();
         return view('rooms.index',['rooms' => $rooms,'current'=>'rooms']);
     }
@@ -42,12 +40,6 @@ class RoomsController extends Controller
      */
     public function store(Request $request)
     {
-        // DB::table('rooms')->insert([
-        //     'room_number' => $request->input('room_number'),
-        //     'room_name' => $request->input('room_name'),
-        //     'room_desc' => $request->input('room_desc'),
-        //     'max_occupancy' => $request->input('max_occ')
-        // ]);
         Room::create($request->input());
         return redirect()->action('RoomsController@index');
     }
@@ -70,7 +62,7 @@ class RoomsController extends Controller
      */
     public function edit(Room $room)
     {
-        $rooms = DB::table('rooms')->where('id',$room->id)->first();
+        $rooms = Rooms::where('id',$room->id)->first();
         return view('rooms.edit',['rooms' => $rooms,'current'=>'rooms']);
     }
 
@@ -83,14 +75,6 @@ class RoomsController extends Controller
      */
     public function update(Request $request, Room $room)
     {
-        // DB::table('rooms')
-        //     ->where('id',$room->id)            
-        //     ->update([
-        //     'room_number' => $request->input('room_number'),
-        //     'room_name' => $request->input('room_name'),
-        //     'room_desc' => $request->input('room_desc'),
-        //     'max_occupancy' => $request->input('max_occ')
-        // ]);
         $room->fill($request->input());
         $room->save();
         return redirect()->action('RoomsController@index');
