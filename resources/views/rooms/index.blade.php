@@ -33,7 +33,7 @@
         @foreach($rooms as $room)
             <tr>
                 <td class="actions">
-                    <form action="{{ action('RoomsController@destroy', ['room' => $room->room_number]) }}" method="POST">
+                    <form action="{{ action('RoomsController@destroy', ['room' => $room]) }}" method="POST">
                         @method('DELETE')
                         @csrf
                         <button type="submit" class="btn btn-link delete" title="Delete" value="DELETE">Delete</button>
@@ -47,7 +47,7 @@
                 <td class="actions">
                     <a
                         class="edit"
-                        href="{{ action('RoomsController@edit', ['room' => $room->room_number]) }}"
+                        href="{{ action('RoomsController@edit', ['room' => $room]) }}"
                         alt="Edit"
                         title="Edit"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i>
                     </a>
