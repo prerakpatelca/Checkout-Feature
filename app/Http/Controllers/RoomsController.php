@@ -62,7 +62,7 @@ class RoomsController extends Controller
      */
     public function edit(Room $room)
     {
-        $rooms = Rooms::where('id',$room->id)->first();
+        $rooms = Room::where('id',$room->id)->first();
         return view('rooms.edit',['rooms' => $rooms,'current'=>'rooms']);
     }
 
