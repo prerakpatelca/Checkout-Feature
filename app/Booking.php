@@ -13,5 +13,6 @@ class Booking extends Model
         'room_name',
         'guest_name',
         'date',
+        'rooms_id',
     ];
 }
