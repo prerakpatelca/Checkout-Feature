@@ -1,4 +1,4 @@
-http://limitless-garden-08467.herokuapp.com/goback
+https://limitless-garden-08467.herokuapp.com/
 
 # About Project
 Using Heroku Postgres database products are stored and then displayed on the website, where user can add to cart and checkout items. User will be prompted for their information like name, email address and credit card number. Once the order is placed successfully user will receieve an email to their email address.
