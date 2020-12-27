@@ -5,7 +5,7 @@ Using Heroku Postgres database products are stored and then displayed on the web
 
 Special note: As this is a project I haven't subscribed to Mailgun software it will not send an email to the email address specified while placing order. But, it does work for the verified email address that means, once we are subscribed to Mailgun it will work just fine.
 
-Languages and Tools used: 
+# Languages and Tools used
     - Laravel
     - Heroku
     - Mailgun
