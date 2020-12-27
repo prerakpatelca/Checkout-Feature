@@ -1,3 +1,10 @@
+http://limitless-garden-08467.herokuapp.com/goback
+
+# About Project
+Using Heroku Postgres database products are stored and then displayed on the website, where user can add to cart and checkout items. User will be prompted for their information like name, email address and credit card number. Once the order is placed successfully user will receieve an email to their email address.
+
+Special note: As this is a project I haven't subscribed to Mailgun software it will not send an email to the email address specified while placing order. But, it does work for the verified email address that means, once we are subscribed to Mailgun it will work just fine.
+
 <p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
