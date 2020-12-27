@@ -11,6 +11,13 @@ Special note: As this is a project I haven't subscribed to Mailgun software it w
     - Mailgun
     - Heroku Postgres database
     - Heroku adminium for tracking entries
+ 
+ # Learning Objectives
+    - Host an application using Heroku
+    - Create a CRUD web app with Laravel
+    - Create views with Blade template engine
+    - Use Eloquent CRM to interact with database
+
 
 <p align="center"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
